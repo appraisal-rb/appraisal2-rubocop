@@ -27,6 +27,9 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Changed
 
+- Updated generated Git attributes to use the `smorg-ruby` diff driver for
+  Ruby files.
+
 ### Deprecated
 
 ### Removed
