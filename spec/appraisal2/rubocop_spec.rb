@@ -16,4 +16,14 @@ RSpec.describe Appraisal2::Rubocop do
     expect { described_class.install! }.not_to raise_error
     expect(described_class.installed?).to eq(true)
   end
+
+  it "registers a gemfile transform" do
+    described_class.install!
+    status = instance_double(Process::Status, :success? => true)
+    allow(Open3).to receive(:capture3).and_return(["corrected\n", "", status])
+
+    content = Appraisal::Hooks.run_transform_gemfile(nil, "gemfiles/style.gemfile", "source\n")
+
+    expect(content).to eq("corrected\n")
+  end
 end

@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.description = "Appraisal2::Rubocop registers Appraisal2 generation hooks that run RuboCop against generated appraisal gemfiles."
   spec.homepage = "https://github.com/appraisal-rb/appraisal2-rubocop"
   spec.licenses = ["MIT"]
-  spec.required_ruby_version = ">= 2.4.0"
+  spec.required_ruby_version = ">= 3.1.0"
 
   spec.files = Dir["lib/**/*.rb", "README.md", "CHANGELOG.md", "LICENSE.md"]
   spec.require_paths = ["lib"]

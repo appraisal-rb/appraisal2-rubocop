@@ -10,8 +10,8 @@ module Appraisal2
       def install!
         return if @installed
 
-        ::Appraisal.after_write_gemfile do |_appraisal, path|
-          Runner.new(path).run
+        ::Appraisal.transform_gemfile do |content, context|
+          Runner.new(context.path).correct(content)
         end
         @installed = true
       end

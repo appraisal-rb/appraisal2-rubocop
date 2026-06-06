@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require "open3"
+
 module Appraisal2
   module Rubocop
     class Runner
@@ -12,16 +14,17 @@ module Appraisal2
         @flags = flags || configured_flags
       end
 
-      def run
-        return true if disabled?
+      def correct(content)
+        return content if disabled?
 
-        system(*command_args).tap do |ok|
-          raise "appraisal2-rubocop failed: #{command_args.join(" ")}" unless ok
-        end
+        stdout, stderr, status = Open3.capture3(*command_args, :stdin_data => content)
+        raise "appraisal2-rubocop failed: #{command_args.join(" ")}\n#{stderr}" unless status.success?
+
+        stdout
       end
 
       def command_args
-        [@command, *@flags, @path]
+        [@command, "--stdin", @path, *@flags, "--stderr", "--format", "quiet"]
       end
 
       private
