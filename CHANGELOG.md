@@ -33,4 +33,7 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Fixed
 
+- Replaced the hardcoded local `appraisal2` Gemfile path with ENV-driven
+  `nomono` sibling workspace wiring.
+
 ### Security

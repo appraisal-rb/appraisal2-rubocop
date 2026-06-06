@@ -45,4 +45,16 @@ eval_gemfile "gemfiles/modular/x_std_libs.gemfile"
 # See unlocked_deps appraisal for more details on irb inclusion
 gem "irb", "~> 1.17" # ruby >= 2.7
 
-gem "appraisal2", path: "../appraisal2"
+# kettle-jem:freeze
+unless %w[false 0 no off].include?(ENV.fetch("APPRAISAL_RB_DEV", "false").downcase)
+  require "nomono/bundler" unless defined?(Nomono)
+
+  eval_nomono_gems(
+    gems: %w[appraisal2],
+    prefix: "APPRAISAL_RB",
+    path_env: "APPRAISAL_RB_DEV",
+    root: %w[src kettle-rb appraisal-rb],
+    debug_env: "APPRAISAL_RB_DEBUG"
+  )
+end
+# kettle-jem:unfreeze

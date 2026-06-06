@@ -3,6 +3,8 @@
 
 [env]
 DEBUG = "false"
+APPRAISAL_RB_DEBUG = "false"
+APPRAISAL_RB_DEV = "false"
 FLOSS_CFG_FUND_DEBUG = "false"
 FLOSS_CFG_FUND_LOGFILE = "tmp/log/debug.log"
 FUNDING_ORG = "appraisal-rb"
