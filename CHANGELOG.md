@@ -20,6 +20,25 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Added
 
+### Changed
+
+### Deprecated
+
+### Removed
+
+### Fixed
+
+### Security
+
+## [0.1.0] - 2026-06-06
+
+- TAG: [v0.1.0][0.1.0t]
+- COVERAGE: 98.04% -- 50/51 lines in 3 files
+- BRANCH COVERAGE: 80.00% -- 8/10 branches in 3 files
+- 20.00% documented
+
+### Added
+
 - Added Appraisal2 in-memory gemfile transform hook integration that runs
   RuboCop on generated appraisal gemfiles before Appraisal2 writes them.
 - Set the plugin Ruby floor to Ruby 3.1, since generated style normalization is
@@ -30,13 +49,11 @@ Please file a bug if you notice a violation of semantic versioning.
 - Updated generated Git attributes to use the `smorg-ruby` diff driver for
   Ruby files.
 
-### Deprecated
-
-### Removed
-
 ### Fixed
 
 - Replaced the hardcoded local `appraisal2` Gemfile path with ENV-driven
   `nomono` sibling workspace wiring.
 
-### Security
+[Unreleased]: https://github.com/appraisal-rb/appraisal2-rubocop/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/appraisal-rb/appraisal2-rubocop/compare/93b1188d679a0d56f960a9cd85b48b2c1e2d1a9f...v0.1.0
+[0.1.0t]: https://github.com/appraisal-rb/appraisal2-rubocop/releases/tag/v0.1.0
