@@ -14,7 +14,11 @@ RSpec.describe Appraisal2::Rubocop do
     described_class.reset!
 
     expect { described_class.install! }.not_to raise_error
+    expect { described_class.install! }.not_to raise_error
     expect(described_class.installed?).to be(true)
+
+    described_class.reset!
+    expect { described_class.reset! }.not_to raise_error
   end
 
   it "registers a gemfile transform" do
