@@ -1,0 +1,8 @@
+module Appraisal2
+  module Rubocop
+    module Version
+      VERSION: String
+    end
+    VERSION: String
+  end
+end

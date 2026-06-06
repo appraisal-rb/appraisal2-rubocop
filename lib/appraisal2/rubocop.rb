@@ -1,5 +1,8 @@
 # frozen_string_literal: true
 
+require "version_gem"
+require_relative "rubocop/version"
+
 require "appraisal/hooks"
 require "appraisal2/rubocop/runner"
 require "appraisal2/rubocop/version"
@@ -28,3 +31,7 @@ module Appraisal2
 end
 
 Appraisal2::Rubocop.install!
+
+Appraisal2::Rubocop::Version.class_eval do
+  extend VersionGem::Basic
+end
