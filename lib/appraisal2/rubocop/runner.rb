@@ -17,7 +17,7 @@ module Appraisal2
       def correct(content)
         return content if disabled?
 
-        stdout, stderr, status = Open3.capture3(*command_args, :stdin_data => content)
+        stdout, stderr, status = Open3.capture3(*command_args, stdin_data: content)
         raise "appraisal2-rubocop failed: #{command_args.join(" ")}\n#{stderr}" unless status.success?
 
         stdout

@@ -9,22 +9,26 @@ require "appraisal2/rubocop/version"
 
 module Appraisal2
   module Rubocop
+    INSTALL_MUTEX = Mutex.new
+
     class << self
       def install!
-        return if @installed
+        INSTALL_MUTEX.synchronize do
+          return if installed?
 
-        ::Appraisal.transform_gemfile do |content, context|
-          Runner.new(context.path).correct(content)
+          ::Appraisal.transform_gemfile do |content, context|
+            Runner.new(context.path).correct(content)
+          end
+          const_set(:INSTALLED, true)
         end
-        @installed = true
       end
 
       def installed?
-        !!@installed
+        const_defined?(:INSTALLED, false)
       end
 
       def reset!
-        @installed = false
+        remove_const(:INSTALLED) if installed?
       end
     end
   end
