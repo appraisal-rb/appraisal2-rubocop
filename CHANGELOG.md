@@ -22,9 +22,6 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Changed
 
-- Raised the Appraisal2 dependency floor to 3.1.1 and documented the
-  `plugin`/`generator_only` integration shape.
-
 ### Deprecated
 
 ### Removed
@@ -32,6 +29,18 @@ Please file a bug if you notice a violation of semantic versioning.
 ### Fixed
 
 ### Security
+
+## [0.2.0] - 2026-06-06
+
+- TAG: [v0.2.0][0.2.0t]
+- COVERAGE: 98.04% -- 50/51 lines in 3 files
+- BRANCH COVERAGE: 80.00% -- 8/10 branches in 3 files
+- 20.00% documented
+
+### Changed
+
+- Raised the Appraisal2 dependency floor to 3.1.1 and documented the
+  `plugin`/`generator_only` integration shape.
 
 ## [0.1.0] - 2026-06-06
 
@@ -57,6 +66,8 @@ Please file a bug if you notice a violation of semantic versioning.
 - Replaced the hardcoded local `appraisal2` Gemfile path with ENV-driven
   `nomono` sibling workspace wiring.
 
-[Unreleased]: https://github.com/appraisal-rb/appraisal2-rubocop/compare/v0.1.0...HEAD
+[Unreleased]: https://github.com/appraisal-rb/appraisal2-rubocop/compare/v0.2.0...HEAD
+[0.2.0]: https://github.com/appraisal-rb/appraisal2-rubocop/compare/v0.1.0...v0.2.0
+[0.2.0t]: https://github.com/appraisal-rb/appraisal2-rubocop/releases/tag/v0.2.0
 [0.1.0]: https://github.com/appraisal-rb/appraisal2-rubocop/compare/93b1188d679a0d56f960a9cd85b48b2c1e2d1a9f...v0.1.0
 [0.1.0t]: https://github.com/appraisal-rb/appraisal2-rubocop/releases/tag/v0.1.0

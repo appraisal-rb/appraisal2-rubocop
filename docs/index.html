@@ -88,7 +88,8 @@ I've summarized my thoughts in [this blog post](https://dev.to/galtzo/hostile-ta
 <p>This plugin is intended for modern Ruby style-maintenance environments. It does<br>
 not match Appraisal2’s legacy runtime floor.</p>
 
-<p>Require the plugin before generating appraisal gemfiles:</p>
+<p>Load it as an Appraisal2 generator plugin, and make its RuboCop toolchain<br>
+available only to the generator bundle.</p>
 
 <h2 id="-info-you-can-shake-a-stick-at">💡 Info you can shake a stick at</h2>
 
@@ -312,7 +313,34 @@ not practical for the current toolchain.</p>
 
 <h2 id="-basic-usage">🔧 Basic Usage</h2>
 
-<pre class="code language-ruby"><code class="language-ruby">require &quot;appraisal2/rubocop&quot;
+<p>Add the plugin to the style toolchain used by the Appraisal root bundle:</p>
+
+<pre class="code language-ruby"><code class="language-ruby"># gemfiles/modular/style.gemfile
+gem &quot;appraisal2-rubocop&quot;, &quot;~&gt; 0.1&quot;, &quot;&gt;= 0.1.0&quot;, require: false
+</code></pre>
+
+<p>Expose that style toolchain only to the Appraisal generator bundle:</p>
+
+<pre class="code language-ruby"><code class="language-ruby"># Appraisal.root.gemfile
+if Gem::Version.new(RUBY_VERSION) &gt;= Gem::Version.new(&quot;3.1&quot;)
+  if respond_to?(:generator_only)
+    generator_only do
+      eval_gemfile &quot;gemfiles/modular/style.gemfile&quot;
+    end
+  else
+    eval_gemfile &quot;gemfiles/modular/style.gemfile&quot;
+  end
+end
+</code></pre>
+
+<p>The <code>respond_to?(:generator_only)</code> split is for the two DSLs that read this<br>
+file: Appraisal2 uses the <code>generator_only</code> block when building generated<br>
+appraisal gemfiles, while Bundler evaluates the same file to install the<br>
+generator bundle.</p>
+
+<p>Load the plugin from <code>Appraisals</code>:</p>
+
+<pre class="code language-ruby"><code class="language-ruby">plugin &quot;appraisal2-rubocop&quot;, require: &quot;appraisal2/rubocop&quot;, optional: true
 </code></pre>
 
 <p>By default each generated gemfile is processed in memory with:</p>
@@ -522,7 +550,7 @@ Please consider sponsoring me or the project.</p>
 </div></div>
 
       <div id="footer">
-  Generated on Sat Jun  6 15:03:55 2026 by
+  Generated on Sat Jun  6 20:37:34 2026 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.44 (ruby-4.0.5).
 </div>
