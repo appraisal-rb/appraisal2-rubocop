@@ -26,7 +26,8 @@ Runs RuboCop against Appraisal2-generated gemfiles via Appraisal2 lifecycle hook
 This plugin is intended for modern Ruby style-maintenance environments. It does
 not match Appraisal2's legacy runtime floor.
 
-Require the plugin before generating appraisal gemfiles:
+Load it as an Appraisal2 generator plugin, and make its RuboCop toolchain
+available only to the generator bundle.
 
 ## 💡 Info you can shake a stick at
 
@@ -117,8 +118,37 @@ gem install appraisal2-rubocop
 
 ## 🔧 Basic Usage
 
+Add the plugin to the style toolchain used by the Appraisal root bundle:
+
 ```ruby
-require "appraisal2/rubocop"
+# gemfiles/modular/style.gemfile
+gem "appraisal2-rubocop", "~> 0.1", ">= 0.1.0", require: false
+```
+
+Expose that style toolchain only to the Appraisal generator bundle:
+
+```ruby
+# Appraisal.root.gemfile
+if Gem::Version.new(RUBY_VERSION) >= Gem::Version.new("3.1")
+  if respond_to?(:generator_only)
+    generator_only do
+      eval_gemfile "gemfiles/modular/style.gemfile"
+    end
+  else
+    eval_gemfile "gemfiles/modular/style.gemfile"
+  end
+end
+```
+
+The `respond_to?(:generator_only)` split is for the two DSLs that read this
+file: Appraisal2 uses the `generator_only` block when building generated
+appraisal gemfiles, while Bundler evaluates the same file to install the
+generator bundle.
+
+Load the plugin from `Appraisals`:
+
+```ruby
+plugin "appraisal2-rubocop", require: "appraisal2/rubocop", optional: true
 ```
 
 By default each generated gemfile is processed in memory with:

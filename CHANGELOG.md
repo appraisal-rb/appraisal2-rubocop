@@ -22,6 +22,9 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Changed
 
+- Raised the Appraisal2 dependency floor to 3.1.1 and documented the
+  `plugin`/`generator_only` integration shape.
+
 ### Deprecated
 
 ### Removed

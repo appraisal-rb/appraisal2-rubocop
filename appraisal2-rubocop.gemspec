@@ -95,7 +95,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   # Utilities
-  spec.add_dependency("appraisal2", ">= 3.1.0")
+  spec.add_dependency("appraisal2", ">= 3.1.1")
   spec.add_dependency("rubocop", ">= 1.0")
   spec.add_dependency("version_gem", "~> 1.1", ">= 1.1.10")              # ruby >= 2.2.0
 
@@ -113,7 +113,7 @@ Gem::Specification.new do |spec|
   #       and preferably a modular one (see gemfiles/modular/*.gemfile).
 
   # Dev, Test, & Release Tasks
-  spec.add_development_dependency("kettle-dev", "~> 2.0", ">= 2.0.8")      # ruby >= 3.1.0
+  spec.add_development_dependency("kettle-dev", "~> 2.1", ">= 2.1.0")      # ruby >= 3.1.0
 
   # Security
   spec.add_development_dependency("bundler-audit", "~> 0.9.3")                      # ruby >= 2.0.0
