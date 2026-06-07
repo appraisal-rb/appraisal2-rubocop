@@ -28,6 +28,9 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Fixed
 
+- Avoid loading the Ruby-3.2+-only style toolchain from `Appraisal.root.gemfile`
+  on Ruby 3.1, fixing Ruby 3.1 CI dependency resolution.
+
 ### Security
 
 ## [0.2.0] - 2026-06-06

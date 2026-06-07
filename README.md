@@ -129,7 +129,7 @@ Expose that style toolchain only to the Appraisal generator bundle:
 
 ```ruby
 # Appraisal.root.gemfile
-if Gem::Version.new(RUBY_VERSION) >= Gem::Version.new("3.1")
+if Gem::Version.new(RUBY_VERSION) >= Gem::Version.new("3.2")
   if respond_to?(:generator_only)
     generator_only do
       eval_gemfile "gemfiles/modular/style.gemfile"
@@ -163,7 +163,7 @@ rubocop --stdin path/to/generated.gemfile --autocorrect --stderr --format quiet
 | Package | appraisal2-rubocop |
 | Description | 💎 Appraisal2::Rubocop registers Appraisal2 generation hooks that run RuboCop against generated appraisal gemfiles. |
 | Homepage | https://github.com/appraisal-rb/appraisal2-rubocop |
-| Source | https://github.com/appraisal-rb/appraisal2-rubocop/tree/v0.1.0 |
+| Source | https://github.com/appraisal-rb/appraisal2-rubocop/tree/v0.2.0 |
 | License | `MIT` |
 | Funding | https://github.com/sponsors/pboling, https://issuehunt.io/u/pboling, https://ko-fi.com/pboling, https://liberapay.com/pboling/donate, https://opencollective.com/appraisal-rb, https://patreon.com/galtzo, https://polar.sh/pboling, https://thanks.dev/u/gh/pboling, https://tidelift.com/funding/github/rubygems/appraisal2-rubocop, https://www.buymeacoffee.com/pboling |
 <!-- kettle-jem:metadata:end -->
