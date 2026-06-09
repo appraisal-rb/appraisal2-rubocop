@@ -28,6 +28,7 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Fixed
 
+- Restored `docs/CNAME` so the generated documentation site keeps its custom domain.
 - Avoid loading the Ruby-3.2+-only style toolchain from `Appraisal.root.gemfile`
   on Ruby 3.1, fixing Ruby 3.1 CI dependency resolution.
 
