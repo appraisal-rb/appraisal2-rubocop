@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.name = "appraisal2-rubocop"
   spec.version = Module.new.tap { |mod| Kernel.load("#{__dir__}/lib/appraisal2/rubocop/version.rb", mod) }::Appraisal2::Rubocop::Version::VERSION
   spec.authors = ["Peter Boling"]
-  spec.email = ["galtzo@floss.com"]
+  spec.email = ["floss@galtzo.com"]
 
   spec.summary = "💎 Run RuboCop cleanup after Appraisal2 gemfile generation"
   spec.description = "💎 Appraisal2::Rubocop registers Appraisal2 generation hooks that run RuboCop against generated appraisal gemfiles."

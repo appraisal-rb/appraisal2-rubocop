@@ -322,7 +322,7 @@ gem &quot;appraisal2-rubocop&quot;, &quot;~&gt; 0.1&quot;, &quot;&gt;= 0.1.0&quo
 <p>Expose that style toolchain only to the Appraisal generator bundle:</p>
 
 <pre class="code language-ruby"><code class="language-ruby"># Appraisal.root.gemfile
-if Gem::Version.new(RUBY_VERSION) &gt;= Gem::Version.new(&quot;3.1&quot;)
+if Gem::Version.new(RUBY_VERSION) &gt;= Gem::Version.new(&quot;3.2&quot;)
   if respond_to?(:generator_only)
     generator_only do
       eval_gemfile &quot;gemfiles/modular/style.gemfile&quot;
@@ -354,7 +354,7 @@ generator bundle.</p>
 | Package | appraisal2-rubocop |<br>
 | Description | 💎 Appraisal2::Rubocop registers Appraisal2 generation hooks that run RuboCop against generated appraisal gemfiles. |<br>
 | Homepage | https://github.com/appraisal-rb/appraisal2-rubocop |<br>
-| Source | https://github.com/appraisal-rb/appraisal2-rubocop/tree/v0.1.0 |<br>
+| Source | https://github.com/appraisal-rb/appraisal2-rubocop/tree/v0.2.0 |<br>
 | License | <code>MIT</code> |<br>
 | Funding | https://github.com/sponsors/pboling, https://issuehunt.io/u/pboling, https://ko-fi.com/pboling, https://liberapay.com/pboling/donate, https://opencollective.com/appraisal-rb, https://patreon.com/galtzo, https://polar.sh/pboling, https://thanks.dev/u/gh/pboling, https://tidelift.com/funding/github/rubygems/appraisal2-rubocop, https://www.buymeacoffee.com/pboling |<br>
 <!-- kettle-jem:metadata:end --></p>
@@ -550,7 +550,7 @@ Please consider sponsoring me or the project.</p>
 </div></div>
 
       <div id="footer">
-  Generated on Sat Jun  6 20:37:34 2026 by
+  Generated on Thu Jun 11 01:09:59 2026 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.44 (ruby-4.0.5).
 </div>
