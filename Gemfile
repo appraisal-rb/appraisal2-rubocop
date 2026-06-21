@@ -53,7 +53,7 @@ unless ENV.fetch("K_JEM_TEMPLATING", "false").casecmp("true").zero?
       gems: %w[appraisal2],
       prefix: "APPRAISAL_RB",
       path_env: "APPRAISAL_RB_DEV",
-      root: %w[src kettle-rb appraisal-rb],
+      root: %w[src kettle-dev appraisal-rb],
       debug_env: "APPRAISAL_RB_DEBUG"
     )
   end

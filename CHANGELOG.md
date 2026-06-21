@@ -32,6 +32,9 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Fixed
 
+- Updated local Appraisal workspace path wiring to use the migrated
+  `kettle-dev` organization directory.
+
 ### Security
 
 ## [0.2.1] - 2026-06-14
