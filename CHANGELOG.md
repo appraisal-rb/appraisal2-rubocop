@@ -20,11 +20,7 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Added
 
-- Added support for JRuby 10.1 and TruffleRuby 34.0.
-
 ### Changed
-
-- Retemplated project metadata and CI/development automation with `kettle-jem` v7.0.0.
 
 ### Deprecated
 
@@ -32,10 +28,27 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Fixed
 
+### Security
+
+## [0.2.2] - 2026-06-23
+
+- TAG: [v0.2.2][0.2.2t]
+- COVERAGE: 96.15% -- 50/52 lines in 4 files
+- BRANCH COVERAGE: 80.00% -- 8/10 branches in 4 files
+- 20.00% documented
+
+### Added
+
+- Added support for JRuby 10.1 and TruffleRuby 34.0.
+
+### Changed
+
+- Retemplated project metadata and CI/development automation with `kettle-jem` v7.0.0.
+
+### Fixed
+
 - Updated local Appraisal workspace path wiring to use the migrated
   `kettle-dev` organization directory.
-
-### Security
 
 ## [0.2.1] - 2026-06-14
 
@@ -87,7 +100,9 @@ Please file a bug if you notice a violation of semantic versioning.
 - Replaced the hardcoded local `appraisal2` Gemfile path with ENV-driven
   `nomono` sibling workspace wiring.
 
-[Unreleased]: https://github.com/appraisal-rb/appraisal2-rubocop/compare/v0.2.1...HEAD
+[Unreleased]: https://github.com/appraisal-rb/appraisal2-rubocop/compare/v0.2.2...HEAD
+[0.2.2]: https://github.com/appraisal-rb/appraisal2-rubocop/compare/v0.2.1...v0.2.2
+[0.2.2t]: https://github.com/appraisal-rb/appraisal2-rubocop/releases/tag/v0.2.2
 [0.2.1]: https://github.com/appraisal-rb/appraisal2-rubocop/compare/v0.2.0...v0.2.1
 [0.2.1t]: https://github.com/appraisal-rb/appraisal2-rubocop/releases/tag/v0.2.1
 [0.2.0]: https://github.com/appraisal-rb/appraisal2-rubocop/compare/v0.1.0...v0.2.0
