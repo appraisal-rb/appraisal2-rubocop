@@ -13,16 +13,20 @@ PATH
       rubocop (>= 1.0)
       version_gem (~> 1.1, >= 1.1.13)
 
+PATH
+  remote: /var/home/pboling/src/my/appraisal-rb/appraisal2
+  specs:
+    appraisal2 (3.1.3)
+      bundler (>= 1.17.3)
+      rake (>= 10)
+      thor (>= 0.14)
+
 GEM
   remote: https://gem.coop/
   specs:
     addressable (2.9.0)
       public_suffix (>= 2.0.2, < 8.0)
     ansi (1.6.0)
-    appraisal2 (3.1.3)
-      bundler (>= 1.17.3)
-      rake (>= 10)
-      thor (>= 0.14)
     ast (2.4.3)
     backports (3.25.3)
     benchmark (0.5.0)
@@ -95,7 +99,7 @@ GEM
       kettle-test (~> 2.0, >= 2.0.4)
       ruby-progressbar (~> 1.13)
       version_gem (~> 1.1, >= 1.1.13)
-    kettle-rb (0.1.0)
+    kettle-rb (0.1.1)
     kettle-soup-cover (3.0.0.rc5)
       simplecov (>= 1.0.pre)
       simplecov-cobertura (>= 4.0.pre)
@@ -365,6 +369,7 @@ PLATFORMS
 
 DEPENDENCIES
   addressable (>= 2.8, < 3)
+  appraisal2!
   appraisal2-rubocop!
   benchmark (~> 0.5, >= 0.5.0)
   bundler-audit (~> 0.9.3)
@@ -374,9 +379,9 @@ DEPENDENCIES
   gem_bench (~> 2.0, >= 2.0.5)
   gitmoji-regex (~> 2.0, >= 2.0.3)
   irb (~> 1.17)
-  kettle-dev (~> 2.2, >= 2.2.15)
-  kettle-soup-cover (~> 3.0.a, >= 3.0.0.rc4)
-  kettle-test (~> 2.0, >= 2.0.6)
+  kettle-dev (~> 2.2, >= 2.2.24)
+  kettle-soup-cover (~> 3.0.a, >= 3.0.0.rc5)
+  kettle-test (~> 2.0, >= 2.0.8)
   kramdown (~> 2.5, >= 2.5.1)
   kramdown-parser-gfm (~> 1.1)
   mutex_m (~> 0.2)
@@ -388,18 +393,18 @@ DEPENDENCIES
   require_bench (~> 1.0, >= 1.0.4)
   rspec (~> 3.13)
   rubocop-gradual (~> 0.4, >= 0.4.0)
-  rubocop-lts (~> 22.3, >= 22.3.0)
-  rubocop-lts-rspec (~> 1.0, >= 1.0.3)
+  rubocop-lts (~> 22.3, >= 22.3.1)
+  rubocop-lts-rspec (~> 1.0, >= 1.0.4)
   rubocop-minitest (~> 0.38, >= 0.38.1)
   rubocop-on-rbs (~> 2.0, >= 2.0.0)
   rubocop-packaging (~> 0.6, >= 0.6.0)
-  rubocop-ruby3_1 (~> 3.0, >= 3.0.2)
+  rubocop-ruby3_1 (~> 3.0, >= 3.0.5)
   ruby-progressbar (~> 1.13)
   simplecov!
   standard (~> 1.54, >= 1.54.0)
-  stone_checksums (~> 1.0, >= 1.0.3)
+  stone_checksums (~> 1.0, >= 1.0.4)
   stringio (>= 3.0)
-  turbo_tests2 (~> 3.1, >= 3.1.4)
+  turbo_tests2 (~> 3.1, >= 3.1.5)
   webrick (~> 1.9)
   yaml-converter (~> 0.2, >= 0.2.2)
   yard (~> 0.9, >= 0.9.44)
@@ -412,7 +417,7 @@ DEPENDENCIES
 CHECKSUMS
   addressable (2.9.0) sha256=7fdf6ac3660f7f4e867a0838be3f6cf722ace541dd97767fa42bc6cfa980c7af
   ansi (1.6.0) sha256=ac9ea0c0ea8d32fb4e271348e609963ac78882f34b73836c2a02b3622e666658
-  appraisal2 (3.1.3) sha256=1f71cc64246904a40e2273b0a47e399c4727924b807d3c1e124cd7482d07ed07
+  appraisal2 (3.1.3)
   appraisal2-rubocop (0.2.2)
   ast (2.4.3) sha256=954615157c1d6a382bc27d690d973195e79db7f55e9765ac7c481c60bdb4d383
   backports (3.25.3) sha256=94298d32dc3c40ca15633b54e282780b49e2db0c045f602ea1907e4f63a17235
@@ -445,7 +450,7 @@ CHECKSUMS
   irb (1.18.0) sha256=de9454a0703a54704b9811a5ef31a60c86949fbf4013fcf244fabc7c775248e3
   json (2.20.0) sha256=9362bc6e55a952b056abf9167cf053358181c904cb70cd6eee0808ea830fc32b
   kettle-dev (2.2.24) sha256=572e150530ce39c01c4e11032be9e9ae2b4634d2922a0b0ee821c17ebc49925f
-  kettle-rb (0.1.0) sha256=b6b0b6e15fb42a897ef7208e28fe30b3b98be06d09f4512a6728bc71d0817320
+  kettle-rb (0.1.1) sha256=2e793d817f5150339770c547a2c72ed0c1a23b5e5a3ef46f462500dcb10dec4d
   kettle-soup-cover (3.0.0.rc5) sha256=3c8e5551a1c900fb95503d69f815205a1138f168500acdd4559c3a5ef1817da5
   kettle-test (2.0.8) sha256=1b404fa8a6bfcb3456b6d222b1b31a39122fc3e713abc0fdc58db873a61de575
   kramdown (2.5.2) sha256=1ba542204c66b6f9111ff00dcc26075b95b220b07f2905d8261740c82f7f02fa
