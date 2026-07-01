@@ -34,6 +34,8 @@ direct_sibling_templating = ENV.fetch("K_JEM_TEMPLATING", "false").casecmp("true
 if direct_sibling_gems.any? &&
     (direct_sibling_local ||
       ENV.fetch("K_JEM_TEMPLATING", "false").casecmp("true").zero?)
+  direct_sibling_dev_was_set = ENV.key?("APPRAISAL_RB_DEV")
+  direct_sibling_dev_original = ENV.fetch("APPRAISAL_RB_DEV", nil)
   begin
     nomono_activation_requirements = nomono_requirements
     nomono_lockfile = File.expand_path("Gemfile.lock", __dir__)
@@ -62,6 +64,14 @@ if direct_sibling_gems.any? &&
     )
   rescue LoadError
     warn "Install nomono to enable APPRAISAL_RB_DEV local sibling-gem dependencies."
+  ensure
+    if direct_sibling_templating && !direct_sibling_local
+      if direct_sibling_dev_was_set
+        ENV["APPRAISAL_RB_DEV"] = direct_sibling_dev_original
+      else
+        ENV.delete("APPRAISAL_RB_DEV")
+      end
+    end
   end
 end
 
@@ -88,18 +98,3 @@ eval_gemfile "gemfiles/modular/x_std_libs.gemfile"
 
 # See unlocked_deps appraisal for more details on irb inclusion
 gem "irb", "~> 1.17" # ruby >= 2.7
-
-unless ENV.fetch("K_JEM_TEMPLATING", "false").casecmp("true").zero?
-  unless %w[false 0 no off].include?(ENV.fetch("APPRAISAL_RB_DEV", "false").downcase)
-    require "nomono/bundler" unless defined?(Nomono)
-
-    eval_nomono_gems(
-      gems: %w[appraisal2],
-      prefix: "APPRAISAL_RB",
-      path_env: "APPRAISAL_RB_DEV",
-      root: %w[src kettle-dev appraisal-rb],
-      debug_env: "APPRAISAL_RB_DEBUG"
-    )
-  end
-end
-# kettle-jem:unfreeze

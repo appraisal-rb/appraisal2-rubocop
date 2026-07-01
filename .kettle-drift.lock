@@ -35,14 +35,5 @@
         58
       ]
     }
-  ],
-  "prefix: \"APPRAISAL_RB\",\npath_env: \"APPRAISAL_RB_DEV\",": [
-    {
-      "file": "Gemfile",
-      "lines": [
-        59,
-        98
-      ]
-    }
   ]
 }
