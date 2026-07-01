@@ -28,9 +28,18 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Fixed
 
-- Package configured license files in gem release file lists.
-
 ### Security
+
+## [0.2.3] - 2026-07-01
+
+- TAG: [v0.2.3][0.2.3t]
+- COVERAGE: 96.15% -- 50/52 lines in 4 files
+- BRANCH COVERAGE: 80.00% -- 8/10 branches in 4 files
+- 20.00% documented
+
+### Fixed
+
+- Package configured license files in gem release file lists.
 
 ## [0.2.2] - 2026-06-23
 
@@ -102,7 +111,9 @@ Please file a bug if you notice a violation of semantic versioning.
 - Replaced the hardcoded local `appraisal2` Gemfile path with ENV-driven
   `nomono` sibling workspace wiring.
 
-[Unreleased]: https://github.com/appraisal-rb/appraisal2-rubocop/compare/v0.2.2...HEAD
+[Unreleased]: https://github.com/appraisal-rb/appraisal2-rubocop/compare/v0.2.3...HEAD
+[0.2.3]: https://github.com/appraisal-rb/appraisal2-rubocop/compare/v0.2.2...v0.2.3
+[0.2.3t]: https://github.com/appraisal-rb/appraisal2-rubocop/releases/tag/v0.2.3
 [0.2.2]: https://github.com/appraisal-rb/appraisal2-rubocop/compare/v0.2.1...v0.2.2
 [0.2.2t]: https://github.com/appraisal-rb/appraisal2-rubocop/releases/tag/v0.2.2
 [0.2.1]: https://github.com/appraisal-rb/appraisal2-rubocop/compare/v0.2.0...v0.2.1
