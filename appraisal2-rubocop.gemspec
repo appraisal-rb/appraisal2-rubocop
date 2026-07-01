@@ -98,7 +98,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   # Utilities
-  spec.add_dependency("appraisal2", ">= 3.1.1")
+  spec.add_dependency("appraisal2", ">= 3.1.4")
   spec.add_dependency("rubocop", ">= 1.0")
   spec.add_dependency("version_gem", "~> 1.1", ">= 1.1.13")              # ruby >= 2.2.0
 
