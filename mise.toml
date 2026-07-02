@@ -2,7 +2,6 @@
 # Local overrides belong in .env.local (loaded via dotenvy through mise).
 
 [env]
-DEBUG = "false"
 APPRAISAL_RB_DEBUG = "false"
 APPRAISAL_RB_DEV = "false"
 FLOSS_CFG_FUND_DEBUG = "false"
