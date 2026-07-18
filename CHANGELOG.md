@@ -28,6 +28,10 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Fixed
 
+- Run RuboCop through an explicit Bundler/RubyGems subprocess environment so
+  generated gemfile cleanup does not depend on a bare `rubocop` executable
+  being present on `PATH`.
+
 ### Security
 
 ## [0.2.3] - 2026-07-01
