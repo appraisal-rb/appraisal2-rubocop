@@ -22,22 +22,33 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Changed
 
-- kettle-jem-template-20260716-001 - Shim gemspec manifests now include
-  `LICENSE.md` instead of nonexistent `LICENSE.txt`.
-- kettle-jem-template-20260716-002 - Generated gemspec manifests now ship fewer
-  repository-only files by default to reduce downstream distro packaging churn.
-
 ### Deprecated
 
 ### Removed
 
 ### Fixed
 
+### Security
+
+## [1.0.0] - 2026-07-18
+
+- TAG: [v1.0.0][1.0.0t]
+- COVERAGE: 98.85% -- 86/87 lines in 4 files
+- BRANCH COVERAGE: 95.83% -- 23/24 branches in 4 files
+- 15.79% documented
+
+### Changed
+
+- kettle-jem-template-20260716-001 - Shim gemspec manifests now include
+  `LICENSE.md` instead of nonexistent `LICENSE.txt`.
+- kettle-jem-template-20260716-002 - Generated gemspec manifests now ship fewer
+  repository-only files by default to reduce downstream distro packaging churn.
+
+### Fixed
+
 - Run RuboCop through an explicit Bundler/RubyGems subprocess environment so
   generated gemfile cleanup does not depend on a bare `rubocop` executable
   being present on `PATH`.
-
-### Security
 
 ## [0.2.3] - 2026-07-01
 
@@ -120,7 +131,9 @@ Please file a bug if you notice a violation of semantic versioning.
 - Replaced the hardcoded local `appraisal2` Gemfile path with ENV-driven
   `nomono` sibling workspace wiring.
 
-[Unreleased]: https://github.com/appraisal-rb/appraisal2-rubocop/compare/v0.2.3...HEAD
+[Unreleased]: https://github.com/appraisal-rb/appraisal2-rubocop/compare/v1.0.0...HEAD
+[1.0.0]: https://github.com/appraisal-rb/appraisal2-rubocop/compare/v0.2.3...v1.0.0
+[1.0.0t]: https://github.com/appraisal-rb/appraisal2-rubocop/releases/tag/v1.0.0
 [0.2.3]: https://github.com/appraisal-rb/appraisal2-rubocop/compare/v0.2.2...v0.2.3
 [0.2.3t]: https://github.com/appraisal-rb/appraisal2-rubocop/releases/tag/v0.2.3
 [0.2.2]: https://github.com/appraisal-rb/appraisal2-rubocop/compare/v0.2.1...v0.2.2
