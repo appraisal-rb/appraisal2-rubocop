@@ -320,7 +320,7 @@ templates:
 # .git/smorg/config, check to verify setup, undo to remove managed entries, or
 # none to opt out.
 # ENV override: KETTLE_JEM_GIT_DRIVERS
-git_drivers: builtin-diff
+git_drivers: semantic-diff
 
 # Optional kettle-jem plugins.
 # Each entry is a gem name. During bootstrap, kettle-jem ensures each plugin is

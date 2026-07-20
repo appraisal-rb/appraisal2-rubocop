@@ -22,6 +22,9 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Changed
 
+- Re-enabled the StructuredMerge `smorg-rb` semantic Git diff driver for Ruby
+  files so this project dogfoods the internal tooling.
+
 ### Deprecated
 
 ### Removed
