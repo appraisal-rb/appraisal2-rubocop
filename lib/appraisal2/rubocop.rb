@@ -1,11 +1,10 @@
 # frozen_string_literal: true
 
 require "version_gem"
-require_relative "rubocop/version"
 
 require "appraisal/hooks"
 require "appraisal2/rubocop/runner"
-require "appraisal2/rubocop/version"
+require_relative "rubocop/version"
 
 module Appraisal2
   module Rubocop
