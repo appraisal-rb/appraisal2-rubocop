@@ -23,7 +23,7 @@ require "kettle/test/rspec"
 # `kettle/test/rspec` installs harness helpers documented in spec/README.md.
 
 # This library
-require "appraisal2/rubocop"
+require "appraisal2-rubocop"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
