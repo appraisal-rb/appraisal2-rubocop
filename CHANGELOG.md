@@ -20,6 +20,25 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Added
 
+### Changed
+
+### Deprecated
+
+### Removed
+
+### Fixed
+
+### Security
+
+## [1.0.1] - 2026-08-06
+
+- TAG: [v1.0.1][1.0.1t]
+- COVERAGE: 100.00% -- 86/86 lines in 4 files
+- BRANCH COVERAGE: 95.83% -- 23/24 branches in 4 files
+- 26.32% documented
+
+### Added
+
 - kettle-jem-template-20260720-005 - README Support & Community links now
   include RubyForum.
 - kettle-jem-template-20260726-001 - Projects now include YARD lint
@@ -43,10 +62,6 @@ Please file a bug if you notice a violation of semantic versioning.
   installing the main Gemfile bundle.
 - kettle-jem-template-20260801-001 - Generated README gem dashboard links now
   use ClickGems instead of BestGems.
-
-### Deprecated
-
-### Removed
 
 ### Fixed
 
@@ -90,8 +105,6 @@ Please file a bug if you notice a violation of semantic versioning.
 
 - kettle-jem-template-20260802-001 - Devcontainer JSON files now merge as JSONC,
   preserving comments and trailing commas during template updates.
-
-### Security
 
 ## [1.0.0] - 2026-07-18
 
@@ -192,7 +205,9 @@ Please file a bug if you notice a violation of semantic versioning.
 - Replaced the hardcoded local `appraisal2` Gemfile path with ENV-driven
   `nomono` sibling workspace wiring.
 
-[Unreleased]: https://github.com/appraisal-rb/appraisal2-rubocop/compare/v1.0.0...HEAD
+[Unreleased]: https://github.com/appraisal-rb/appraisal2-rubocop/compare/v1.0.1...HEAD
+[1.0.1]: https://github.com/appraisal-rb/appraisal2-rubocop/compare/v1.0.0...v1.0.1
+[1.0.1t]: https://github.com/appraisal-rb/appraisal2-rubocop/releases/tag/v1.0.1
 [1.0.0]: https://github.com/appraisal-rb/appraisal2-rubocop/compare/v0.2.3...v1.0.0
 [1.0.0t]: https://github.com/appraisal-rb/appraisal2-rubocop/releases/tag/v1.0.0
 [0.2.3]: https://github.com/appraisal-rb/appraisal2-rubocop/compare/v0.2.2...v0.2.3
