@@ -1,0 +1,5 @@
+{
+  "lib/appraisal2/rubocop.rb:411056163": [
+    [16, 32, 4, "Lint/LtsRuby/UnavailableMethod: IO/SyntaxError#path is unavailable before Ruby 3.2.", 2088095368]
+  ]
+}
