@@ -22,6 +22,23 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Changed
 
+### Deprecated
+
+### Removed
+
+### Fixed
+
+### Security
+
+## [1.0.3] - 2026-09-11
+
+- TAG: [v1.0.3][1.0.3t]
+- COVERAGE: 100.00% -- 86/86 lines in 4 files
+- BRANCH COVERAGE: 95.83% -- 23/24 branches in 4 files
+- 26.32% documented
+
+### Changed
+
 - [kc] kettle-jem/prepare: updated 10 project files:
   - code and tests (1)
   - dependencies (9)
@@ -30,14 +47,6 @@ Please file a bug if you notice a violation of semantic versioning.
   - code and tests (1)
   - dependencies (2)
   - other (1)
-
-### Deprecated
-
-### Removed
-
-### Fixed
-
-### Security
 
 ## [1.0.2] - 2026-08-29
 
@@ -236,7 +245,9 @@ Please file a bug if you notice a violation of semantic versioning.
 - Replaced the hardcoded local `appraisal2` Gemfile path with ENV-driven
   `nomono` sibling workspace wiring.
 
-[Unreleased]: https://github.com/appraisal-rb/appraisal2-rubocop/compare/v1.0.2...HEAD
+[Unreleased]: https://github.com/appraisal-rb/appraisal2-rubocop/compare/v1.0.3...HEAD
+[1.0.3]: https://github.com/appraisal-rb/appraisal2-rubocop/compare/v1.0.2...v1.0.3
+[1.0.3t]: https://github.com/appraisal-rb/appraisal2-rubocop/releases/tag/v1.0.3
 [1.0.2]: https://github.com/appraisal-rb/appraisal2-rubocop/compare/v1.0.1...v1.0.2
 [1.0.2t]: https://github.com/appraisal-rb/appraisal2-rubocop/releases/tag/v1.0.2
 [1.0.1]: https://github.com/appraisal-rb/appraisal2-rubocop/compare/v1.0.0...v1.0.1
