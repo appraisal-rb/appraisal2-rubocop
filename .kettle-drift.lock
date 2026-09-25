@@ -1,22 +1,4 @@
 {
-  "- code and tests (1)\n- dependencies (2)": [
-    {
-      "file": "CHANGELOG.md",
-      "lines": [
-        36,
-        63
-      ]
-    }
-  ],
-  "- dependencies (2)\n- other (1)": [
-    {
-      "file": "CHANGELOG.md",
-      "lines": [
-        37,
-        64
-      ]
-    }
-  ],
   "exec_cmd: \"kettle-test\"\nrubygems: latest": [
     {
       "file": ".github/workflows/current.yml",
