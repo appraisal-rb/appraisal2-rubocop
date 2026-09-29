@@ -44,6 +44,8 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Fixed
 
+- Skip the style-only RuboCop toolchain in the Ruby 3.2 appraisal bundle.
+
 ### Security
 
 ## [1.0.3] - 2026-09-11
