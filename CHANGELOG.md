@@ -29,13 +29,13 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Changed
 
-- [kc] kettle-jem/prepare: updated 11 project files:
-  - dependencies (11)
+- [kc] kettle-jem/prepare: updated 14 project files:
+  - dependencies (14)
 
-- [kc] kettle-jem/template: updated 28 project files:
+- [kc] kettle-jem/template: updated 29 project files:
   - code and tests (2)
   - dependencies (4)
-  - other (1)
+  - other (2)
   - workflows (21)
 
 ### Deprecated
