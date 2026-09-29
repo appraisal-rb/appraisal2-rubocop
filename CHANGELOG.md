@@ -20,6 +20,25 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Added
 
+### Changed
+
+### Deprecated
+
+### Removed
+
+### Fixed
+
+### Security
+
+## [1.0.4] - 2026-09-29
+
+- TAG: [v1.0.4][1.0.4t]
+- COVERAGE: 100.00% -- 86/86 lines in 4 files
+- BRANCH COVERAGE: 95.83% -- 23/24 branches in 4 files
+- 26.32% documented
+
+### Added
+
 - kettle-jem-template-20260913-001 - Templating now also surfaces a review
   entry in `dependency_conflicts.resolve` when a direct development
   dependency doesn't support one or more of this project's declared
@@ -38,15 +57,9 @@ Please file a bug if you notice a violation of semantic versioning.
   - other (2)
   - workflows (21)
 
-### Deprecated
-
-### Removed
-
 ### Fixed
 
 - Skip the style-only RuboCop toolchain in the Ruby 3.2 appraisal bundle.
-
-### Security
 
 ## [1.0.3] - 2026-09-11
 
@@ -263,7 +276,9 @@ Please file a bug if you notice a violation of semantic versioning.
 - Replaced the hardcoded local `appraisal2` Gemfile path with ENV-driven
   `nomono` sibling workspace wiring.
 
-[Unreleased]: https://github.com/appraisal-rb/appraisal2-rubocop/compare/v1.0.3...HEAD
+[Unreleased]: https://github.com/appraisal-rb/appraisal2-rubocop/compare/v1.0.4...HEAD
+[1.0.4]: https://github.com/appraisal-rb/appraisal2-rubocop/compare/v1.0.3...v1.0.4
+[1.0.4t]: https://github.com/appraisal-rb/appraisal2-rubocop/releases/tag/v1.0.4
 [1.0.3]: https://github.com/appraisal-rb/appraisal2-rubocop/compare/v1.0.2...v1.0.3
 [1.0.3t]: https://github.com/appraisal-rb/appraisal2-rubocop/releases/tag/v1.0.3
 [1.0.2]: https://github.com/appraisal-rb/appraisal2-rubocop/compare/v1.0.1...v1.0.2
